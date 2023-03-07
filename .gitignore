@@ -4,6 +4,7 @@
 /service-discovery-eureka-1/target/
 /service-discovery-eureka-2/target/
 /service-discovery-eureka-3/target/
+/gateway-auth1/target/
 # Project exclude paths
 /target/
 .idea
