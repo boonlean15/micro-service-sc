@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-discovery-eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

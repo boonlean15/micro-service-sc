@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: service-discovery-eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    org.springframework.cloud.eureka: DEBUG
