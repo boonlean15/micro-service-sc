@@ -1,5 +1,6 @@
 # Project exclude paths
 /config-client-apollo1/target/
+/config-client-apollo2/target/
 /config-client-apollo1/*.iml
 /service-discovery-eureka-1/target/
 /service-discovery-eureka-2/target/

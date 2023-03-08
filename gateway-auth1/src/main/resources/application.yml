@@ -10,11 +10,24 @@ spring:
         locator:
           enabled: true
           lowerCaseServiceId: true
+      routes:
+        - id: service1_v1
+          uri: http://localhost:7001/v1
+          predicates:
+          - Path=/test
 
+# eureka配置
 eureka:
   client:
-    service-url: #指定注册中心的地址，以便使用服务发现功能
+    service-url:
       defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
+
+# Apollo配置
+apollo:
+  bootstrap:
+    enabled: true
+    namespaces: TEST1.gateway-config
+  meta: http://localhost:8080
 
 # 配置输出日志
 logging:
