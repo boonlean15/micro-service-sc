@@ -9,7 +9,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author cheney
  * @date 2023/3/7 18:23
  */
-@EnableApolloConfig
 @SpringBootApplication
 @EnableDiscoveryClient
 public class GatewayAuth1Application {

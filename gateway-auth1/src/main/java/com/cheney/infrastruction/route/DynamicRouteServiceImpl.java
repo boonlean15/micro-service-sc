@@ -32,7 +32,7 @@ import java.util.List;
  * @author cheney
  * @date 2023/3/7 18:31
  */
-@Component
+//@Component
 @Slf4j
 public class DynamicRouteServiceImpl implements ApplicationEventPublisherAware {
 

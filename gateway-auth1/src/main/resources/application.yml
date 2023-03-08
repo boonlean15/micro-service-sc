@@ -1,47 +1,47 @@
-server:
-  port: 9000
-
-spring:
-  application:
-    name: gateway-auth
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lowerCaseServiceId: true
-      routes:
-        - id: service1_v1
-          uri: http://localhost:7001/v1
-          predicates:
-          - Path=/test
-
-# eureka配置
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
-
+#server:
+#  port: 9000
+#
+#spring:
+#  application:
+#    name: gateway-auth
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#          lowerCaseServiceId: true
+#      routes:
+#        - id: service1_v1
+#          uri: http://localhost:7001/v1
+#          predicates:
+#          - Path=/test
+#
+## eureka配置
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
+#
 # Apollo配置
 apollo:
   bootstrap:
     enabled: true
-    namespaces: TEST1.gateway-config
+    namespaces: application
   meta: http://localhost:8080
-
-# 配置输出日志
-logging:
-  level:
-    org.springframework.cloud.gateway: TRACE
-    org.springframework.http.server.reactive: DEBUG
-    org.springframework.web.reactive: DEBUG
-    reactor.ipc.netty: DEBUG
-
-#开启端点
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  security:
-    enabled: false
+#
+## 配置输出日志
+#logging:
+#  level:
+#    org.springframework.cloud.gateway: TRACE
+#    org.springframework.http.server.reactive: DEBUG
+#    org.springframework.web.reactive: DEBUG
+#    reactor.ipc.netty: DEBUG
+#
+##开启端点
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  security:
+#    enabled: false
