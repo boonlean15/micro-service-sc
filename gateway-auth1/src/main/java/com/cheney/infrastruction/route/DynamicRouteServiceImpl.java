@@ -32,7 +32,7 @@ import java.util.List;
  * @author cheney
  * @date 2023/3/7 18:31
  */
-//@Component
+@Component
 @Slf4j
 public class DynamicRouteServiceImpl implements ApplicationEventPublisherAware {
 
@@ -86,7 +86,7 @@ public class DynamicRouteServiceImpl implements ApplicationEventPublisherAware {
                 this.publisher.publishEvent(new RefreshRoutesEvent(this));
             }
         }
-        log.info("gateway properties refreshed!");
+        log.info("spring.cloud.gateway is dynamic route infect");
     }
 
     private RouteDefinition assembleRouteDefinition(GatewayRouteDefinition gwDefinition) {

@@ -5,11 +5,10 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author cheney
- * @date 2023/3/8 17:43
+ * @date 2023/3/9 16:41
  */
 @Configuration
 @EnableApolloConfig
 public class AppConfig {
-
 
 }

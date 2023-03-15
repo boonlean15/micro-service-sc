@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ribbon-balance
+
+logging:
+  level:
+    org.springframework.cloud: DEBUG

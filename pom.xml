@@ -17,6 +17,7 @@
         <module>config-client-apollo2</module>
         <module>gateway-auth1</module>
         <module>service-provider</module>
+        <module>ribbon-balance1</module>
     </modules>
     <version>1.0-SNAPSHOT</version>
 
