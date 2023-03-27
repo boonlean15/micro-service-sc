@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: feign-service-template
+server:
+  port: 7021
